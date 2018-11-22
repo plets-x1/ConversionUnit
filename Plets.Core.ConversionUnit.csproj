@@ -6,17 +6,17 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ControlAndConversionStructures\Plets.Core.ControlAndConversionStructures.csproj">
+    <ProjectReference Include="../ControlAndConversionStructures/Plets.Core.ControlAndConversionStructures.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\ControlStructure\Plets.Core.ControlStructure.csproj">
+    <ProjectReference Include="../ControlStructure/Plets.Core.ControlStructure.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\FiniteStateMachine\Plets.Modeling.FiniteStateMachine.csproj">
+    <ProjectReference Include="../FiniteStateMachine/Plets.Modeling.FiniteStateMachine.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\Graph\Plets.Modeling.Graph.csproj">
+    <ProjectReference Include="../Graph/Plets.Modeling.Graph.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\UmlDataStructure\Plets.Core.Uml.csproj">
+    <ProjectReference Include="../UmlDataStructure/Plets.Core.Uml.csproj">
     </ProjectReference>
-    <ProjectReference Include="..\Vfsm\Plets.Modeling.Vfsm.csproj">
+    <ProjectReference Include="../Vfsm/Plets.Modeling.Vfsm.csproj">
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
