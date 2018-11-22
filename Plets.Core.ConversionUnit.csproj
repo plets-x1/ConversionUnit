@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" TargetFramework=".NETStandard,Version=v2.1" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>  
+    <AssemblyName>Plets.Core.ConversionUnit</AssemblyName>  
+    <OutputPath>../../build</OutputPath>  
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlAndConversionStructures\Plets.Core.ControlAndConversionStructures.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\ControlStructure\Plets.Core.ControlStructure.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\FiniteStateMachine\Plets.Modeling.FiniteStateMachine.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\Graph\Plets.Modeling.Graph.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\UmlDataStructure\Plets.Core.Uml.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\Vfsm\Plets.Modeling.Vfsm.csproj">
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="./Source/*.cs" />
+  </ItemGroup>
+  <Target Name="Build">  
+    <Csc Sources="@(Compile)" References="@(Reference)" OutputAssembly="$(OutputPath)/$(AssemblyName).dll" />
+  </Target>  
+</Project>
